@@ -17,7 +17,7 @@ MyApplet.prototype = {
         Applet.IconApplet.prototype._init.call(this, orientation);
 
 	this.set_applet_tooltip(_("Touchpad on"));
-	this._settings = new Gio.Settings({ schema: "org.gnome.settings-daemon.peripherals.touchpad"});
+	this._settings = new Gio.Settings({ schema: "org.cinnamon.settings-daemon.peripherals.touchpad"});
 
 	this.menuManager = new PopupMenu.PopupMenuManager(this);
 	this.appletMenu = new Applet.AppletPopupMenu(this, orientation);
